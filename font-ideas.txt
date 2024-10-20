@@ -1,9 +1,0 @@
-All fonts are open font licensed from Google Fonts
-
-Montserrat: Standard text
-Staatliches: Subtitles
-Rob mono: Code/monospace
-
-Decide:
-  IMFell: Headers
-  Daniel Black: Headers
