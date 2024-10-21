@@ -5,20 +5,25 @@ const ArticlesPage = ({ articles }) => {
   return (
     <>
       <h3>
-        Recent Posts from{' '}
-        <a
-          href="https://dev.to/itsnitinr"
-          target="_blank"
-          rel="noopener"
-          className={styles.underline}
-        >
-          dev.to
-        </a>
+        Recent Posts:
       </h3>
       <div className={styles.container}>
         {/* TODO: article structure refactor, use next content? mdc? */}
+        {/* TODO: article view page: what do? design? wing it? */}
         {articles.map((article) => (
           <ArticleCard key={article.id} article={article} />
+          /*
+  ARTICLE EXPECTED STRUCTURE {
+    url: URL,
+    cover_image: IMGSRC, (300w 150h in card)
+    title: STRING,
+    description: STRING
+    // CAN REMOVE
+    page_views_count: STR|NUM,
+    public_reactions_count: STR|NUM,
+    comments_count: STR|NUM,
+  }
+*/
         ))}
       </div>
     </>
