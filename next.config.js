@@ -12,7 +12,9 @@ const cspHeader = `
 `; // TODO: verify this makes sense
 
 module.exports = {
+  output: "standalone", // Ensure we get a static website dir
   images: {
+    unoptimized: true,
     domains: [
       'res.cloudinary.com',
       'avatars.githubusercontent.com',

@@ -2,17 +2,7 @@ import ArticleCard from '../components/ArticleCard';
 import styles from '../styles/ArticlesPage.module.css';
 
 const ArticlesPage = ({ articles }) => {
-  return (
-    <>
-      <h3>
-        Recent Posts:
-      </h3>
-      <div className={styles.container}>
-        {/* TODO: article structure refactor, use next content? mdc? */}
-        {/* TODO: article view page: what do? design? wing it? */}
-        {articles.map((article) => (
-          <ArticleCard key={article.id} article={article} />
-          /*
+  /*
   ARTICLE EXPECTED STRUCTURE {
     url: URL,
     cover_image: IMGSRC, (300w 150h in card)
@@ -23,28 +13,43 @@ const ArticlesPage = ({ articles }) => {
     public_reactions_count: STR|NUM,
     comments_count: STR|NUM,
   }
-*/
-        ))}
+  */
+  return (
+    <>
+      <h3>
+        Recent Posts:
+      </h3>
+      <div className={styles.container}>
+        {/* TODO: article structure refactor, use next content? mdc? */}
+        {/* TODO: article view page: what do? design? wing it? */}
+        (articles && {
+          articles.map((article) => (
+            <ArticleCard key={article.id} article={article} />
+          ))
+        })
+        (!articles && {
+          <h5>Come back soon!</h5>
+        })
       </div>
     </>
   );
 };
 
 export async function getStaticProps() {
-  const res = await fetch(
-    'https://dev.to/api/articles/me/published?per_page=6',
-    {
-      headers: {
-        'api-key': process.env.DEV_TO_API_KEY,
-      },
-    }
-  );
+  // const res = await fetch(
+  //   'https://dev.to/api/articles/me/published?per_page=6',
+  //   {
+  //     headers: {
+  //       'api-key': process.env.DEV_TO_API_KEY,
+  //     },
+  //   }
+  // );
 
   {/* TODO: article structure refactor, use next content? mdc? */ }
-  const data = await res.json();
+  const data = [{}];
 
   return {
-    props: { title: 'Articles', articles: data },
+    props: { title: 'Articles', articles: [] },
     revalidate: 60,
   };
 }
