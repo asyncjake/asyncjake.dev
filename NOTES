@@ -1,3 +1,13 @@
+### Bugs I'm ignoring
+components/Head.jsx needs more details, and an image i guess
+console.logs in Sidebar
+title meaning multiple things throughout app
+env has a next config section, ideal for my stuff for now
+  does env.STAGE override this section?
+
+### Next 14 upgrade for vulns
+The same weird responsive UI bug happened in both 12 and 14, can we just upgrade?
+
 ### Home / typing subtext taglines @ HomePage()::styles.bio
 srs
   Full-stack Dev / Cloud Eng / Good Comms

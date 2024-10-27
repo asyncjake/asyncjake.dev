@@ -50,27 +50,30 @@ const Sidebar = () => {
     <aside className={styles.sidebar}>
       <div className={styles.sidebarTop}>
         {sidebarTopItems.map(({ Icon, path }) => (
-          <Link href={path} key={path}>
-            <div
-              className={`${styles.iconContainer} ${
-                router.pathname === path && styles.active
-              }`}
-            >
-              <Icon
-                fill={
-                  router.pathname === path
-                    ? 'rgb(225, 228, 232)'
-                    : 'rgb(106, 115, 125)'
-                }
-                className={styles.icon}
-              />
-            </div>
-          </Link>
+          <>
+            {console.log(`TOP PATH: ${path}`)}
+            <Link href={path} key={path}>
+              <div
+                className={`${styles.iconContainer} ${router.pathname === path && styles.active
+                  }`}
+              >
+                <Icon
+                  fill={
+                    router.pathname === path
+                      ? 'rgb(225, 228, 232)'
+                      : 'rgb(106, 115, 125)'
+                  }
+                  className={styles.icon}
+                />
+              </div>
+            </Link>
+          </>
         ))}
       </div>
       <div className={styles.sidebarBottom}>
         {sidebarBottomItems.map(({ Icon, path }) => (
           <div className={styles.iconContainer}>
+            {console.log(`BOTTOM PATH: ${path}`)}
             <Link href={path} key={path}>
               <Icon
                 fill={

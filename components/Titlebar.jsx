@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from '../styles/Titlebar.module.css';
 
 const Titlebar = () => {
+  const title = process.env.NEXT_PUBLIC_SITE_TITLE || 'Error: Title Not Found';
   return (
     <section className={styles.titlebar}>
       <Image
@@ -20,7 +21,7 @@ const Titlebar = () => {
         <p>Terminal</p>
         <p>Help</p>
       </div>
-      <p className={styles.title}>Nitin Ranganath - Visual Studio Code</p>
+      <p className={styles.title}>{title}</p>
       <div className={styles.windowButtons}>
         <span className={styles.minimize}></span>
         <span className={styles.maximize}></span>
