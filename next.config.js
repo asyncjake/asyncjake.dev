@@ -11,8 +11,12 @@ const cspHeader = `
     upgrade-insecure-requests;
 `; // TODO: verify this makes sense
 
+const output = process.env.NEXTEXPORT
+  ? 'export' // docs say this gets a static site?
+  : 'standalone'; // Ensure we get a static website dir
+
 module.exports = {
-  output: "standalone", // Ensure we get a static website dir
+  output: output,
   images: {
     unoptimized: true,
     domains: [

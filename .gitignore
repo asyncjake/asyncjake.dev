@@ -24,12 +24,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
+# most env files shouldn't be committed
+.env
 .env.local
 .env.development.local
 .env.test.local
+.env.production
 .env.production.local
 
 # vercel
 .vercel
-.env.production

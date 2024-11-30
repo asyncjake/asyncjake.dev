@@ -1,7 +1,7 @@
 import ArticleCard from '../components/ArticleCard';
 import styles from '../styles/ArticlesPage.module.css';
 
-const ArticlesPage = ({ articles }) => {
+const ArticlesPage = ({ title, articles }) => {
   /*
   ARTICLE EXPECTED STRUCTURE {
     url: URL,
@@ -22,7 +22,7 @@ const ArticlesPage = ({ articles }) => {
       <div className={styles.container}>
         {/* TODO: article structure refactor, use next content? mdc? */}
         {/* TODO: article view page: what do? design? wing it? */}
-        (articles && {
+        (articles?.length && {
           articles.map((article) => (
             <ArticleCard key={article.id} article={article} />
           ))
@@ -35,7 +35,7 @@ const ArticlesPage = ({ articles }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
   // const res = await fetch(
   //   'https://dev.to/api/articles/me/published?per_page=6',
   //   {
@@ -45,12 +45,10 @@ export async function getStaticProps() {
   //   }
   // );
 
-  {/* TODO: article structure refactor, use next content? mdc? */ }
-  const data = [{}];
+  // TODO: article structure refactor, use next content? mdc?
 
   return {
     props: { title: 'Articles', articles: [] },
-    revalidate: 60,
   };
 }
 
