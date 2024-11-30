@@ -33,17 +33,17 @@ const GithubPage = ({ repos, user }) => {
         </div>
       </div>
       <div className={styles.container}>
-        {repos.map((repo) => (
+        {repos?.length && repos.map((repo) => (
           <RepoCard key={repo.id} repo={repo} />
         ))}
       </div>
       <div className={styles.contributions}>
-        <GitHubCalendar
+        {/* <GitHubCalendar
           username={process.env.NEXT_PUBLIC_GITHUB_USERNAME}
           theme={theme}
           hideColorLegend
           hideMonthLabels
-        />
+        /> */}
       </div>
     </>
   );
@@ -59,6 +59,12 @@ export async function getStaticProps() {
     }
   );
   const user = await userRes.json();
+  if (!user?.login) user = {
+    avatar_url: '',
+    login: 'nulldefined',
+    followers: 120,
+    public_repos: 31,
+  }
 
   const repoRes = await fetch(
     `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/repos?per_page=100`,
@@ -78,7 +84,6 @@ export async function getStaticProps() {
 
   return {
     props: { title: 'GitHub', repos, user },
-    revalidate: 10,
   };
 }
 

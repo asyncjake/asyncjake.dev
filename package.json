@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "next dev",
-    "export": "NEXTEXPORT=1 next build",
-    "standalone": "next build"
+    "build": "next build -d",
+    "export": "NEXTEXPORT=1 next build -d"
   },
   "dependencies": {
     "@notionhq/client": "^0.2.2",
