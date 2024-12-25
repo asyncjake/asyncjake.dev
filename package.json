@@ -3,15 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "next dev",
-    "build": "next build -d",
-    "export": "NEXTEXPORT=1 next build -d"
+    "start": "next dev --hostname=0.0.0.0",
+    "build": "NEXTEXPORT=1 next build"
   },
   "dependencies": {
-    "@notionhq/client": "^0.2.2",
     "next": "^15.0.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-github-calendar": "^3.2.2"
+    "react-dom": "^18.3.1"
   }
 }

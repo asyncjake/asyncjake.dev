@@ -51,7 +51,6 @@ const Sidebar = () => {
       <div className={styles.sidebarTop}>
         {sidebarTopItems.map(({ Icon, path }) => (
           <>
-            {console.log(`TOP PATH: ${path}`)}
             <Link href={path} key={path}>
               <div
                 className={`${styles.iconContainer} ${router.pathname === path && styles.active
@@ -73,7 +72,6 @@ const Sidebar = () => {
       <div className={styles.sidebarBottom}>
         {sidebarBottomItems.map(({ Icon, path }) => (
           <div className={styles.iconContainer}>
-            {console.log(`BOTTOM PATH: ${path}`)}
             <Link href={path} key={path}>
               <Icon
                 fill={

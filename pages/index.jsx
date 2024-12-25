@@ -22,7 +22,7 @@ export default function HomePage() {
               <button className={styles.outlined}>Contact Me</button>
             </Link>
           </div>
-          <Illustration className={styles.illustration} />
+          {/* <Illustration className={styles.illustration} /> */}
         </div>
       </div>
     </>

@@ -6,6 +6,15 @@
   border-right: 1px solid var(--explorer-border);
 }
 
+.explorer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.explorer a :hover {
+  text-decoration: "underline";
+}
+
 .title {
   padding: 0.5rem 0.75rem;
   font-weight: 300;
