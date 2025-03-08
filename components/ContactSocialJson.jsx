@@ -42,7 +42,7 @@ const ContactSocialJson = () => {
   return (
     <div className={styles.code}>
       <p className={styles.line}>
-        <span className={styles.className}>.socials</span> &#123;
+        <span className={styles.className}>.contact</span> &#123;
       </p>
       {contactItems.slice(0, 8).map((item, index) => (
         <p className={styles.line} key={index}>

@@ -1,27 +1,33 @@
-# CORE TODO TO MVP: INDENTS NOT REQUIRED
-- Head:20 image card for SEO is Nitin's
-- pages/contact.jsx refactor to no form
-- github links target _blank
-- Home page text
-- Contact needs my contact though
+# CORE TODO TO MVP
+- contact filled out with handles
+- projects.json replaced with my work
+- projects scroll sideways? wack, see if easy or backlog
+- Contact needs my contact, i dont want spam
   - email is good enough, any techy neat way to do this?
+- github links target _blank
+- About section similar to old github readme
+
+## Things to prioritize
+ArticleCard -> CardLink? So it's like article, but repurposed for general use as projects?
+CardLink directs to ${contentType}/${pageName} or smth
+
+## Improvements
+- REMINDER dont roast gitlab lol
+- Head:20 image card for SEO is Nitin's
+- pages/contact.jsx: save in another format to keep form?
+- Home page text
   - where does form go D:
   - can embed google form? ew? :/
-- About section similar to github readme
 - Projects to reflect short summaries of current projects
   - MAKE ONE project page for a bigger breakdown
   - "the technical bits" and "the personal story"
 - Articles: get this to load to a stub article
   - get ONE good article
-- Github page: Ditch it
-  - link to github globally in frame?
-- REMINDER dont roast gitlab lol
 
 ### CSS Bounties
 That damn overflow scrollbar style is rough
 maybe caused by bad element spacing?
 is this the same issue as the breakpoint snappage?
-
 
 ### Bugs I'm ignoring
 images unoptimized seems dumb can we do better
@@ -30,10 +36,6 @@ console.logs in Sidebar
 title meaning multiple things throughout app
 env has a next config section, ideal for my stuff for now
   does env.STAGE override this section?
-
-### Things to prioritize
-ArticleCard -> CardLink? So it's like article, but repurposed for general use as projects?
-CardLink directs to ${contentType}/${pageName} or smth
 
 ### Next 14 upgrade for dep safety
 The same weird responsive UI bug happened in both 12 and 14, can we just upgrade?
