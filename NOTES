@@ -1,3 +1,24 @@
+# CORE TODO TO MVP: INDENTS NOT REQUIRED
+- Home page text
+- Contact needs my contact
+  - where does form go D:
+  - can embed google form? ew? :/
+- About section similar to github readme
+- Projects to reflect short summaries of current projects
+  - MAKE ONE project page for a bigger breakdown
+  - "the technical bits" and "the personal story"
+- Articles: get this to load to a stub article
+  - get ONE good article
+- Github page: Ditch it
+  - link to github globally in frame?
+- REMINDER dont roast gitlab lol
+
+### CSS Bounties
+That damn overflow scrollbar style is rough
+maybe caused by bad element spacing?
+is this the same issue as the breakpoint snappage?
+
+
 ### Bugs I'm ignoring
 images unoptimized seems dumb can we do better
 components/Head.jsx needs more details, and an image i guess
@@ -35,7 +56,7 @@ WE'LL TAKE OUR LEAVE AND GO
 ITS JUST A SPARK BUT ITS ENOUGH
 
 ### Source Cred
-Nitin Ranganath! https://github.com/itsnitinr/vscode-portfolio
+! https://github.com/itsnitinr/vscode-portfolio
 
 ### Themes
 
