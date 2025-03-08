@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "next dev --hostname=0.0.0.0",
-    "build": "NEXTEXPORT=1 next build && mv out docs"
+    "build": "NEXTEXPORT=1 next build && mv out docs && cp CNAME docs/CNAME"
   },
   "dependencies": {
     "next": "^15.1.2",
