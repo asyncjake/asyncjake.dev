@@ -1,6 +1,10 @@
 # CORE TODO TO MVP: INDENTS NOT REQUIRED
+- Head:20 image card for SEO is Nitin's
+- pages/contact.jsx refactor to no form
+- github links target _blank
 - Home page text
-- Contact needs my contact
+- Contact needs my contact though
+  - email is good enough, any techy neat way to do this?
   - where does form go D:
   - can embed google form? ew? :/
 - About section similar to github readme

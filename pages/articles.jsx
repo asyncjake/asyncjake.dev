@@ -1,7 +1,7 @@
 import ArticleCard from '../components/ArticleCard';
 import styles from '../styles/ArticlesPage.module.css';
 
-const ArticlesPage = ({ title, articles }) => {
+const ArticlesPage = ({ articles }) => {
   /*
   ARTICLE EXPECTED STRUCTURE {
     url: URL,
@@ -14,22 +14,21 @@ const ArticlesPage = ({ title, articles }) => {
     comments_count: STR|NUM,
   }
   */
+  const articlesExist = articles && articles.length > 0;
   return (
     <>
-      <h3>
+      <h2>
         Recent Posts:
-      </h3>
+      </h2>
       <div className={styles.container}>
         {/* TODO: article structure refactor, use next content? mdc? */}
         {/* TODO: article view page: what do? design? wing it? */}
-        (articles?.length && {
-          articles.map((article) => (
-            <ArticleCard key={article.id} article={article} />
-          ))
-        })
-        (!articles && {
-          <h5>Come back soon!</h5>
-        })
+        {articlesExist && articles.map((article) => (
+          <ArticleCard key={article.id} article={article} />
+        ))}
+        {!articlesExist && (
+          <h4>Coming soon, many drafts but only so much time to edit...</h4>
+        )}
       </div>
     </>
   );
@@ -48,7 +47,7 @@ export async function getStaticProps(context) {
   // TODO: article structure refactor, use next content? mdc?
 
   return {
-    props: { title: 'Articles', articles: [] },
+    props: { articles: [] },
   };
 }
 

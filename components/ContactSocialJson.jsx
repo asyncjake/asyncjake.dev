@@ -3,57 +3,42 @@ import styles from '../styles/ContactCode.module.css';
 const contactItems = [
   {
     social: 'website',
-    link: 'nitinranganath.me',
-    href: 'https://nitinranganath.me',
+    link: 'https://asyncjake.dev',
+    href: 'https://asyncjake.dev',
   },
   {
     social: 'email',
-    link: 'nitinranganath@gmail.com',
-    href: 'mailto:nitinranganath@gmail.com',
+    link: 'contact@asyncjake.dev',
+    href: 'mailto:contact@asyncjake.dev',
   },
   {
     social: 'github',
-    link: 'itsnitinr',
-    href: 'https://github.com/itsnitinr',
+    link: 'asyncjake',
+    href: 'https://github.com/asyncjake',
   },
-  {
-    social: 'linkedin',
-    link: 'nitinranganath',
-    href: 'https://www.linkedin.com/in/nitinranganath/',
-  },
-  {
-    social: 'twitter',
-    link: 'iamnitinr',
-    href: 'https://www.twitter.com/iamnitinr',
-  },
+  // {
+  //   social: 'linkedin',
+  //   link: 'nitinranganath',
+  //   href: 'https://www.linkedin.com/in/nitinranganath/',
+  // },
+  // {
+  //   social: 'twitter',
+  //   link: 'iamnitinr',
+  //   href: 'https://www.twitter.com/iamnitinr',
+  // },
   {
     social: 'instagram',
-    link: 'iamnitinr',
-    href: 'https://www.instagram.com/iamnitinr',
+    link: '@asyncjake',
+    href: 'https://www.instagram.com/asyncjake',
   },
-  {
-    social: 'polywork',
-    link: 'nitinranganath',
-    href: 'https://www.polywork.com/nitinranganath',
-  },
-  {
-    social: 'telegram',
-    link: 'iamnitinr',
-    href: 'https://t.me/iamnitinr',
-  },
-  {
-    social: 'codepen',
-    link: 'nitinranganath',
-    href: 'https://codepen.io/itsnitinr',
-  },
-  {
-    social: 'codesandbox',
-    link: 'itsnitinr',
-    href: 'https://codesandbox.io/u/itsnitinr',
-  },
+  // {
+  //   social: 'polywork',
+  //   link: 'nitinranganath',
+  //   href: 'https://www.polywork.com/nitinranganath',
+  // },
 ];
 
-const ContactCode = () => {
+const ContactSocialJson = () => {
   return (
     <div className={styles.code}>
       <p className={styles.line}>
@@ -82,4 +67,4 @@ const ContactCode = () => {
   );
 };
 
-export default ContactCode;
+export default ContactSocialJson;

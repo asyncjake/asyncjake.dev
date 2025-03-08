@@ -32,7 +32,7 @@ const explorerItems = [
   },
   {
     name: 'github.html',
-    path: '/github',
+    path: 'https://github.com/asyncjake',
     icon: 'html_icon.svg',
   },
 ];

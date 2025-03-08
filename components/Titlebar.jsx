@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from '../styles/Titlebar.module.css';
 
 const Titlebar = () => {
-  const title = process.env.NEXT_PUBLIC_SITE_TITLE || 'Error: Title Not Found';
+  const title = process.env.NEXT_PUBLIC_SITE_TITLE || '404: Title Not Found';
   return (
     <section className={styles.titlebar}>
       <Image

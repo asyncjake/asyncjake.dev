@@ -9,7 +9,7 @@ const Tabsbar = () => {
       <Tab icon="/css_icon.svg" filename="contact.css" path="/contact" />
       <Tab icon="/json_icon.svg" filename="articles.json" path="/articles" />
       <Tab icon="/js_icon.svg" filename="projects.js" path="/projects" />
-      <Tab icon="/html_icon.svg" filename="github.html" path="/github" />
+      <Tab icon="/html_icon.svg" filename="github.html" path="https://github.com/asyncjake" />
     </div>
   );
 };

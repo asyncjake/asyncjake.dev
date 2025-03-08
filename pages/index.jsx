@@ -14,9 +14,9 @@ export default function HomePage() {
         <div className={styles.foreground}>
           <div className={styles.content}>
             <h1 className={styles.name}>Jake Blow</h1>
-            <h6 className={styles.bio}>Full-stack Dev / Cloud Eng / Good Comms</h6>
+            <h6 className={styles.bio}>Full Stack and Devops Engineer</h6>
             <Link href="/projects">
-              <button className={styles.button}>View Work</button>
+              <button className={styles.button}>Projects of Note</button>
             </Link>
             <Link href="/contact">
               <button className={styles.outlined}>Contact Me</button>

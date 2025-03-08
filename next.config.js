@@ -15,8 +15,12 @@ const output = process.env.NEXTEXPORT
   ? 'export' // docs say this gets a static site?
   : 'standalone'; // Ensure we get a static website dir
 
+const isProd = !!process.env.NEXTEXPORT; // on export, build for ghpages
+
 module.exports = {
   output: output,
+  // basePath: isProd ? '/asyncjake.dev' : '',
+  // assetPrefix: isProd ? '/' : '',
   images: {
     unoptimized: true,
     domains: [
@@ -37,5 +41,12 @@ module.exports = {
         ],
       },
     ]
+  },
+  // these replace across the codebase, be careful
+  compiler: {
+    define: {
+      MY_STRING_VARIABLE: JSON.stringify('my-string'),
+      MY_NUMBER_VARIABLE: '42',
+    },
   },
 };
