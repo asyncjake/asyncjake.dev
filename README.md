@@ -6,6 +6,10 @@ This is a developer portfolio website themed like VSCode and built with Next.js.
 
 The only external service contacted during site build is Github in my variant of this template, which is used to pre-populate your git commit graph graphic. This is entirely optional, and will only print an INFO message about the github key.
 
+NOTICE: getting this to work on Github Pages requires a bunch of little secrets, attempting to document the footnotes here for expansion later:
+- A nojekyll to allow `_next` files: https://stackoverflow.com/a/64493580
+- CNAME in the root of the repo, custom build command/postbuild
+
 ## Idealistic Goals
 
 - [ ] Themes and customizations
