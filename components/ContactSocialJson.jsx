@@ -21,11 +21,11 @@ const contactItems = [
   //   link: 'nitinranganath',
   //   href: 'https://www.linkedin.com/in/nitinranganath/',
   // },
-  // {
-  //   social: 'twitter',
-  //   link: 'iamnitinr',
-  //   href: 'https://www.twitter.com/iamnitinr',
-  // },
+  {
+    social: 'twitter',
+    link: 'asyncjake',
+    href: 'https://x.com/asyncjake',
+  },
   {
     social: 'instagram',
     link: '@asyncjake',

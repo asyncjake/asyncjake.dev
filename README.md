@@ -1,6 +1,6 @@
 # vscode-portfolio / jak edition
 
-Forked and corrupted from the original masterpiece by [Nitin Ranganath (@itsnitinr)](https://github.com/itsnitinr/vscode-portfolio) (cheers for releasing this under MIT!)
+Forked and updated from the original masterpiece by [Nitin Ranganath (@itsnitinr)](https://github.com/itsnitinr/vscode-portfolio) (cheers for releasing this under MIT!)
 
 This is a developer portfolio website themed like VSCode and built with Next.js. This fork is configured for static site output by default, which is intended for easy Github Pages usage. Site setup guide to come in a future blog post.
 
@@ -9,6 +9,8 @@ The only external service contacted during site build is Github in my variant of
 NOTICE: getting this to work on Github Pages requires a bunch of little secrets, attempting to document the footnotes here for expansion later:
 - A nojekyll to allow `_next` files: https://stackoverflow.com/a/64493580
 - CNAME in the root of the repo, custom build command/postbuild
+    - TODO: just root, or anywhere in repo and that dir is served?
+    - i think there's more to it, is there a recursive lookup?
 
 ## Idealistic Goals
 
@@ -53,4 +55,69 @@ The easiest way to deploy a Next.js app is to use the [Vercel Platform](https://
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-TODO: summarize the change needed to next config for vercel deploy
+## Alternately: Deploy anywhere static sites are supported like Github Pages
+
+TODO: info here, probably an outline of the parallel blog to this topic
+
+# ---
+# TASKS / TODO
+# ---
+
+## CORE TODO TO MVP
+- contact filled out with handles
+- projects.json replaced with my work
+- projects scroll sideways? wack, see if easy or backlog
+- Contact needs my contact, i dont want spam
+  - email is good enough, any techy neat way to do this?
+  - ALIAS BABY lets go contact@asyncjake.com
+- github links target _blank
+- About section similar to old github readme
+
+## Things to prioritize
+ArticleCard -> CardLink? So it's like article, but repurposed for general use as projects?
+CardLink directs to ${contentType}/${pageName} or smth
+
+## Improvements
+- Head:20 image card for SEO is Nitin's
+- pages/contact.jsx: save in another format to keep form?
+- Home page text
+  - where does form go D:
+  - can embed google form? ew? :/
+- Projects to reflect short summaries of current projects
+  - MAKE ONE project page for a bigger breakdown
+  - "the technical bits" and "the personal story"
+- Articles: get this to load to a stub article
+  - get ONE good article
+
+### Bugs I'm ignoring
+images unoptimized seems dumb can we do better
+components/Head.jsx needs more details, and an image i guess
+console.logs in Sidebar
+title meaning multiple things throughout app
+env has a next config section, ideal for my stuff for now
+  does env.STAGE override this section?
+
+### Home / typing subtext taglines @ HomePage()::styles.bio
+srs
+  Product Engineer<a> / Fullstack Developer
+fun
+  If you had to stop and think, it was probably a bit
+  Adam and Eve were horny single celled organisms
+  That's my secret, I always wish I was snowboarding
+  HELP I'M TRAPPED IN A DIV AAAAAAAAAAAAAA
+  God writes Python, /fight me/stop denying snake earth theory/
+  Fuck that wanna go on an adventure
+
+
+### Home / under-text-bg-thing @ HomePage():styles.background
+// caeser cypher dumb shit here lol
+// or webdings lol
+REACT IS A PSYOP
+HUT HUT HYAHHHHH
+PERMISSION TO LEAVE THE STATION
+WE'LL TAKE OUR LEAVE AND GO
+ITS JUST A SPARK BUT ITS ENOUGH
+
+### Source Cred
+https://github.com/itsnitinr/vscode-portfolio
+

@@ -20,6 +20,7 @@ const CustomHead = ({ title }) => {
       <meta property="og:image" content="https://imgur.com/4zi5KkQ.png" />
       <meta property="og:url" content="https://asyncjake.dev" />
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
   );
 };
