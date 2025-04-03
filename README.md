@@ -2,6 +2,10 @@
 
 Forked and updated from the original masterpiece by [Nitin Ranganath (@itsnitinr)](https://github.com/itsnitinr/vscode-portfolio) (cheers for releasing this under MIT!)
 
+Only two commands to know:
+- npm start: (assuming you ran npm i) runs a local hotreload next server
+- npm run build: assuming linux/osx, builds the app and if it compiles we git add automatically
+
 This is a developer portfolio website themed like VSCode and built with Next.js. This fork is configured for static site output by default, which is intended for easy Github Pages usage. Site setup guide to come in a future blog post.
 
 The only external service contacted during site build is Github in my variant of this template, which is used to pre-populate your git commit graph graphic. This is entirely optional, and will only print an INFO message about the github key.
@@ -120,4 +124,3 @@ ITS JUST A SPARK BUT ITS ENOUGH
 
 ### Source Cred
 https://github.com/itsnitinr/vscode-portfolio
-

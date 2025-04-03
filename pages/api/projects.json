@@ -43,14 +43,14 @@
     "demo": "https://healthyways.herokuapp.com/"
   },
   {
-    "name": "VSCode Portfolio",
+    "name": "Next.js Portfolio Site",
     "image": "https://imgur.com/mKkz0iz.png",
-    "description": "A themeable and developer-centric portfolio based on the VSCode",
+    "description": "This website, forked from itsnitinr/vscode-portfolio and upgraded",
     "tags": [
       "next",
       "css-modules"
     ],
     "source_code": "https://github.com/itsnitinr/vscode-portfolio",
-    "demo": "http://vscode-portfolio.vercel.app/"
+    "demo": "https://asyncjake.dev"
   }
 ]
