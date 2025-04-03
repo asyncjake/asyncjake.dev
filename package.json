@@ -8,7 +8,7 @@
     "postbuild": "mv out docs && cp CNAME docs/CNAME && touch docs/.nojekyll && git add . && echo Build succeeded and changes added, review before pushing!"
   },
   "dependencies": {
-    "next": "^15.1.2",
+    "next": "^15.2.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
