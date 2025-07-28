@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "next dev --hostname=0.0.0.0",
+    "start": "npm install && next dev --hostname=0.0.0.0",
     "build": "NEXTEXPORT=1 next build && rm -r docs",
     "postbuild": "mv out docs && cp CNAME docs/CNAME && touch docs/.nojekyll && git add . && echo Build succeeded and changes added, review before pushing!"
   },
