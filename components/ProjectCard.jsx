@@ -16,6 +16,16 @@ const ProjectCard = ({ project }) => {
           ))}
         </div>
         <div className={styles.cta}>
+          {project.link && (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.underline}
+            >
+              Official Link
+            </a>
+          )}
           {project.source_code && (
             <a
               href={project.source_code}

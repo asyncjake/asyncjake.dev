@@ -18,8 +18,8 @@ const contactItems = [
   },
   // {
   //   social: 'linkedin',
-  //   link: 'nitinranganath',
-  //   href: 'https://www.linkedin.com/in/nitinranganath/',
+  //   link: 'asyncjake',
+  //   href: 'https://www.linkedin.com/in/asyncjake/',
   // },
   {
     social: 'twitter',
@@ -31,11 +31,6 @@ const contactItems = [
     link: '@asyncjake',
     href: 'https://www.instagram.com/asyncjake',
   },
-  // {
-  //   social: 'polywork',
-  //   link: 'nitinranganath',
-  //   href: 'https://www.polywork.com/nitinranganath',
-  // },
 ];
 
 const ContactSocialJson = () => {
