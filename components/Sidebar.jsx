@@ -15,16 +15,20 @@ const sidebarTopItems = [
     path: '/',
   },
   {
-    Icon: GithubIcon,
-    path: 'https://github.com/asyncjake',
+    Icon: AccountIcon,
+    path: '/about',
+  },
+  {
+    Icon: PencilIcon,
+    path: '/articles',
   },
   {
     Icon: CodeIcon,
     path: '/projects',
   },
   {
-    Icon: PencilIcon,
-    path: '/articles',
+    Icon: GithubIcon,
+    path: 'https://github.com/asyncjake',
   },
   {
     Icon: MailIcon,
@@ -33,10 +37,6 @@ const sidebarTopItems = [
 ];
 
 const sidebarBottomItems = [
-  {
-    Icon: AccountIcon,
-    path: '/about',
-  },
   {
     Icon: SettingsIcon,
     path: '/settings',

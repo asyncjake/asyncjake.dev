@@ -16,11 +16,6 @@ const explorerItems = [
     icon: 'markdown_icon.svg',
   },
   {
-    name: 'contact.css',
-    path: '/contact',
-    icon: 'css_icon.svg',
-  },
-  {
     name: 'articles.json',
     path: '/articles',
     icon: 'json_icon.svg',
@@ -34,6 +29,11 @@ const explorerItems = [
     name: 'github.html',
     path: 'https://github.com/asyncjake',
     icon: 'html_icon.svg',
+  },
+  {
+    name: 'contact.css',
+    path: '/contact',
+    icon: 'css_icon.svg',
   },
 ];
 
