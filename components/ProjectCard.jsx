@@ -8,13 +8,15 @@ const ProjectCard = ({ project }) => {
       <div className={styles.content}>
         <h3>{project.name}</h3>
         <p>{project.description}</p>
-        <div className={styles.tags}>
-          {project.tags.map((tag) => (
-            <span key={tag} className={tag}>
-              {tag}
-            </span>
-          ))}
-        </div>
+        {project.bullets && (
+          <div style={{ padding: 12, fontSize: 14 }} className={styles.tag}>
+            <ul>
+              {project.bullets.map((poppop) => (
+                <li> {poppop} </li>
+              ))}
+            </ul>
+          </div>
+        )}
         <div className={styles.cta}>
           {project.link && (
             <a
@@ -24,6 +26,16 @@ const ProjectCard = ({ project }) => {
               className={styles.underline}
             >
               Official Link
+            </a>
+          )}
+          {project.coming_soon && (
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.underline}
+            >
+              Coming Soon!
             </a>
           )}
           {project.source_code && (

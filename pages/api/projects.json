@@ -1,64 +1,64 @@
 [
   {
+    "name": "Colorjakd VSCode Theme Extension",
+    "image": "placeholder-2.png",
+    "description": "My own custom light themes packaged with some awesome MIT-licensed dark themes I hijacked, officially published!",
+    "bullets": [
+      "vsce tooling",
+      "color theory",
+      "azure devops",
+      "i needed a good light theme"
+    ],
+    "link": "https://marketplace.visualstudio.com/items?itemName=asyncjake.colorjakd",
+    "source_code": "https://github.com/asyncjake/colorjakd-vscode-themes"
+  },
+  {
     "name": "BeatBattleBot",
     "image": "placeholder-1.png",
     "description": "Discord bot for music competitions",
-    "tags": [
+    "bullets": [
       "discord.js",
-      "node",
-      "custom CICD",
-      "chatbot"
+      "Node.js",
+      "Custom CICD",
+      "JSON data storage"
     ],
     "source_code": "https://github.com/asyncjake/beatbattlebot"
   },
   {
-    "name": "Snaptake",
+    "name": "Snaptake Video Editor",
     "image": "placeholder-2.png",
-    "description": "Prototypical video editing software for solo creators",
-    "tags": [
-      "go",
-      "audio",
-      "video",
-      "ffmpeg extension",
-      "automatic editing"
+    "description": "Prototypical video editing software to give time back to solo creators by simplifying the first draft",
+    "bullets": [
+      "golang",
+      "audio analysis",
+      "ffmpeg"
     ],
+    "coming_soon": true
   },
   {
-    "name": "My Portfolio Website (this one!)",
+    "name": "Portfolio Website (this one!)",
     "image": "placeholder-1.png",
-    "description": "This website, forked from itsnitinr/vscode-portfolio and upgraded! This is a static site exported by Next for Github Pages",
-    "tags": [
-      "next",
-      "jsx",
-      "Tailwind",
-      "github pages",
-      "css-modules"
+    "description": "My website, initially a fork of itsnitinr/vscode-portfolio, and evolved to the site you see now!",
+    "bullets": [
+      "NextJS",
+      "JSX",
+      "TailwindCSS",
+      "Github Pages",
+      "CSS Modules"
     ],
-    "demo": "https://asyncjake.dev"
-  },
-  {
-    "name": "Colorjakd VSCode Theme Extension",
-    "image": "placeholder-2.png",
-    "description": "My own custom light themes packaged with some awesome MIT-licensed dark themes I 'jakd', officially published!",
-    "tags": [
-      "vscode",
-      "design"
-    ],
-    "link": https: //github.com/asyncjake/colorjakd-vscode-themes",
-    "source_code": "https://github.com/asyncjake/colorjakd-vscode-themes",
+    "source_code": "https://github.com/asyncjake/asyncjake.dev",
+    "link": "https://asyncjake.dev"
   },
   {
     "name": "Minesweeper but Java",
-    "image": "placeholder-1.png",
+    "image": "placeholder-2.png",
     "description": "A game I rebuilt fully from scratch in college",
-    "tags": [
+    "bullets": [
       "java",
       "swing",
-      "jazz",
-      "bob-omb graphics",
-      "early work"
+      "java swing",
+      "definitely NOT the official Nintendo bob-omb graphic"
     ],
-    "demo": "YOUTUBE_MINESWEEPER",
     "source_code": "https://github.com/asyncjake/minesweeper-java"
   }
 ]
