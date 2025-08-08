@@ -1,6 +1,6 @@
-# vscode-portfolio / jak edition
+# NextJS Portfolio Site - VSCode Style!
 
-Forked and updated from the original masterpiece by [Nitin Ranganath (@itsnitinr)](https://github.com/itsnitinr/vscode-portfolio) (cheers for releasing this under MIT!)
+Forked and updated from the original masterpiece by [Nitin Ranganath (@itsnitinr)](https://github.com/itsnitinr/vscode-portfolio) - cheers for releasing this under MIT!
 
 Only two commands to know:
 - npm start: runs npm install, then a local hotreload next server
@@ -10,7 +10,7 @@ This is a developer portfolio website themed like VSCode and built with Next.js.
 
 The only external service contacted during site build is Github in my variant of this template, which is used to pre-populate your git commit graph graphic. This is entirely optional, and will only print an INFO message about the github key.
 
-NOTICE: getting this to work on Github Pages requires a bunch of little secrets, attempting to document the footnotes here for expansion later:
+NOTICE: getting this to work on Github Pages requires a bunch of little secrets, noting some things that need expansion:
 - A nojekyll to allow `_next` files: https://stackoverflow.com/a/64493580
 - CNAME in the root of the repo, custom build command/postbuild
     - TODO: just root, or anywhere in repo and that dir is served?
@@ -24,9 +24,8 @@ npm install && npm start
 yarn install && yarn start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser for a hot-reloading site of awesomeness.
+Open [http://localhost:3000](http://localhost:3000) with your browser for a super-fast hot-reload-enabled dev experience.
 
-All VSCode related components can be found in the `components` folder. To change the content of the portfolio, check out the `pages` folder. To add or remove pages, modify `components/Sidebar.jsx` and `components/Tabsbar.jsx`.
 
 ## Deploy to Github Pages
 
@@ -47,7 +46,7 @@ The easiest way to deploy a Next.js app is to use the [Vercel Platform](https://
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Alternately: Deploy anywhere static sites are supported like Github Pages
+## Alternately: Deploy anywhere static sites are supported like Github Pages but elsewhere
 
-TODO: Full info here, little tutorials in the docs are probably an antipattern but in this case it seems cool
+TODO: Full info here, probably a blog post on Next deployment strategies and link to it?
 
