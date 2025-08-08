@@ -27,16 +27,16 @@ const sidebarTopItems = [
     path: '/projects',
   },
   {
-    Icon: GithubIcon,
-    path: 'https://github.com/asyncjake',
-  },
-  {
     Icon: MailIcon,
     path: '/contact',
   },
 ];
 
 const sidebarBottomItems = [
+  // {
+  //   Icon: GithubIcon,
+  //   path: 'https://github.com/asyncjake',
+  // },
   {
     Icon: SettingsIcon,
     path: '/settings',
@@ -50,7 +50,7 @@ const Sidebar = () => {
     <aside className={styles.sidebar}>
       <div className={styles.sidebarTop}>
         {sidebarTopItems.map(({ Icon, path }) => (
-          <Link href={path} key={path} target="_blank">
+          <Link href={path} key={path}>
             <div
               className={`${styles.iconContainer} ${router.pathname === path && styles.active
                 }`}

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
+echo "Todo: check file list and if any js/jsx/css/html changed, then run build"
 npm run build && git add docs/
 

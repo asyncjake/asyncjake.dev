@@ -25,17 +25,18 @@ const explorerItems = [
     path: '/projects',
     icon: 'js_icon.svg',
   },
-  {
-    name: 'github.html',
-    path: 'https://github.com/asyncjake',
-    icon: 'html_icon.svg',
-  },
+  // {
+  //   name: 'github.html',
+  //   path: 'https://github.com/asyncjake',
+  //   icon: 'html_icon.svg',
+  // },
   {
     name: 'contact.css',
     path: '/contact',
     icon: 'css_icon.svg',
   },
 ];
+
 
 const Explorer = () => {
   const [portfolioOpen, setPortfolioOpen] = useState(true);
@@ -63,7 +64,7 @@ const Explorer = () => {
           style={portfolioOpen ? { display: 'block' } : { display: 'none' }}
         >
           {explorerItems.map((item) => (
-            <Link href={item.path} key={item.name} target="_blank">
+            <Link href={item.path} key={item.name}>
               <div className={styles.file}>
                 <Image
                   src={`/${item.icon}`}

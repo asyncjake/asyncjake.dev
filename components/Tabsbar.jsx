@@ -8,10 +8,11 @@ const Tabsbar = () => {
       <Tab icon="/markdown_icon.svg" filename="about.md" path="/about" />
       <Tab icon="/json_icon.svg" filename="articles.json" path="/articles" />
       <Tab icon="/js_icon.svg" filename="projects.js" path="/projects" />
-      <Tab icon="/html_icon.svg" filename="github.html" path="https://github.com/asyncjake" />
       <Tab icon="/css_icon.svg" filename="contact.css" path="/contact" />
     </div>
   );
 };
+
+// <Tab icon="/html_icon.svg" filename="github.html" path="https://github.com/asyncjake" />
 
 export default Tabsbar;
