@@ -16,15 +16,6 @@ NOTICE: getting this to work on Github Pages requires a bunch of little secrets,
     - TODO: just root, or anywhere in repo and that dir is served?
     - i think there's more to it, is there a recursive lookup?
 
-## Idealistic Goals
-
-- [ ] Themes and customizations
-  - colorjakd showcase
-  - write script to turn theme file into portfolio theme? blog it? blogception?
-- [ ] Easter Egg ideas
-  - build a vscode-like alert component
-  - close button in 'editor' alerts 'your bank account is now closed, thank you'
-
 ## Running Development Server
 
 ```bash
@@ -39,10 +30,7 @@ All VSCode related components can be found in the `components` folder. To change
 
 ## Deploy to Github Pages
 
-TODO: explain pages setup, output dir, expectations, why 'public' dir already in use
-TODO: recommend pro for private site with public pages with free https built in (vs manual gitlab config)
-TODO: write out a blog about github pages, like a damn good setup blog for 3 popular site generators
-TODO: blog it all as one thing, link to it here
+Deploying to Pages works the same as any static site - in this case, use "npm run build" to export the Next site to the "docs/" directory, which allows you to configure Github Pages using their default settings to "serve from the docs/ folder". Additional DNS steps will be necessary, I don't have that here, but I believe in you!
 
 ## Next.js Resources
 
@@ -61,66 +49,5 @@ Check out the [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Alternately: Deploy anywhere static sites are supported like Github Pages
 
-TODO: info here, probably an outline of the parallel blog to this topic
+TODO: Full info here, little tutorials in the docs are probably an antipattern but in this case it seems cool
 
-# ---
-# TASKS / TODO
-# ---
-
-## CORE TODO TO MVP
-- contact filled out with handles
-- projects.json replaced with my work
-- projects scroll sideways? wack, see if easy or backlog
-- Contact needs my contact, i dont want spam
-  - email is good enough, any techy neat way to do this?
-  - ALIAS BABY lets go contact@asyncjake.com
-- github links target _blank
-- About section similar to old github readme
-
-## Things to prioritize
-ArticleCard -> CardLink? So it's like article, but repurposed for general use as projects?
-CardLink directs to ${contentType}/${pageName} or smth
-
-## Improvements
-- Head:20 image card for SEO is Nitin's
-- pages/contact.jsx: save in another format to keep form?
-- Home page text
-  - where does form go D:
-  - can embed google form? ew? :/
-- Projects to reflect short summaries of current projects
-  - MAKE ONE project page for a bigger breakdown
-  - "the technical bits" and "the personal story"
-- Articles: get this to load to a stub article
-  - get ONE good article
-
-### Bugs I'm ignoring
-images unoptimized seems dumb can we do better
-components/Head.jsx needs more details, and an image i guess
-console.logs in Sidebar
-title meaning multiple things throughout app
-env has a next config section, ideal for my stuff for now
-  does env.STAGE override this section?
-
-### Home / typing subtext taglines @ HomePage()::styles.bio
-srs
-  Product Engineer<a> / Fullstack Developer
-fun
-  If you had to stop and think, it was probably a bit
-  Adam and Eve were horny single celled organisms
-  That's my secret, I always wish I was snowboarding
-  HELP I'M TRAPPED IN A DIV AAAAAAAAAAAAAA
-  God writes Python, /fight me/stop denying snake earth theory/
-  Fuck that wanna go on an adventure
-
-
-### Home / under-text-bg-thing @ HomePage():styles.background
-// caeser cypher dumb shit here lol
-// or webdings lol
-REACT IS A PSYOP
-HUT HUT HYAHHHHH
-PERMISSION TO LEAVE THE STATION
-WE'LL TAKE OUR LEAVE AND GO
-ITS JUST A SPARK BUT ITS ENOUGH
-
-### Source Cred
-https://github.com/itsnitinr/vscode-portfolio
