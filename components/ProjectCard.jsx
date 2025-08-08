@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
           <div style={{ padding: 12, fontSize: 14 }} className={styles.tag}>
             <ul>
               {project.bullets.map((poppop) => (
-                <li> {poppop} </li>
+                <li key={poppop}> {poppop} </li>
               ))}
             </ul>
           </div>
@@ -29,14 +29,9 @@ const ProjectCard = ({ project }) => {
             </a>
           )}
           {project.coming_soon && (
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.underline}
-            >
+            <span className={styles.underline} >
               Coming Soon!
-            </a>
+            </span>
           )}
           {project.source_code && (
             <a
