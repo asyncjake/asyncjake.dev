@@ -27,14 +27,12 @@ const Bottombar = () => {
         </div>
       </div>
       <div className={styles.container}>
-        <div className={styles.section}>
-          <NextjsIcon className={styles.icon} />
-          <p>Powered by Next.js</p>
-        </div>
-        <div className={styles.section}>
-          <CheckIcon className={styles.icon} />
-          <p>Prettier</p>
-        </div>
+        <a target='_blank' href="https://nextjs.org/">
+          <div className={styles.section}>
+            <NextjsIcon className={styles.icon} />
+            <p>Powered by Next.js</p>
+          </div>
+        </a>
         <div className={styles.section}>
           <BellIcon />
         </div>

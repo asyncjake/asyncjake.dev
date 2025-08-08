@@ -50,7 +50,7 @@ const Sidebar = () => {
     <aside className={styles.sidebar}>
       <div className={styles.sidebarTop}>
         {sidebarTopItems.map(({ Icon, path }) => (
-          <Link href={path} key={path}>
+          <Link href={path} key={path} target="_blank">
             <div
               className={`${styles.iconContainer} ${router.pathname === path && styles.active
                 }`}
